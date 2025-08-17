@@ -95,7 +95,7 @@ exports.obtenerMesasCascada = async (req, res) => {
 
 
 
-exports.obtenerMesa1 = async (req, res) => {
+exports.obtenerMesa = async (req, res) => {
     try {
         const mesa = await Mesa.findOne({ codigoMesa: req.params.codigoMesa });
         if (!mesa) return res.status(404).json({ msg: 'Mesa no encontrada' });

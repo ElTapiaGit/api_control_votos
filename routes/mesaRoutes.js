@@ -9,8 +9,7 @@ router.get('/mesas/num/:numMesa',mesaController.getMesaPorNumMesa);
 router.get('/circunscripciones', mesaController.listarCircunscripciones);
 router.get('/mesas/cascada/:id', mesaController.obtenerMesasCascada);
 router.get('/estado/:id', mesaController.verificarEstadoVotacion);
-router.get('/mesas/:codigoMesa', mesaController.obtenerMesa1);
-router.get('/mesas/num/:numMesa',mesaController.getMesaPorNumMesa);
+router.get('/mesas/:codigoMesa', mesaController.obtenerMesa);
 
 
 module.exports = router;
