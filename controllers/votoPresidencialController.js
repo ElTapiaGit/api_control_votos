@@ -161,7 +161,6 @@ exports.obtenerTotalesPorCircunscripcion = async (req, res) => {
         // Si no hay votos, devolver 0 en todos los partidos
         if (!resultados || resultados.length === 0) {
             return res.json({
-                AP: 0,
                 LIBRE: 0,
                 PDC: 0,
                 votosValidos: 0,
