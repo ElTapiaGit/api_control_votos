@@ -116,14 +116,8 @@ exports.obtenerResultadosPorCircunscripcion = async (req, res) => {
             {
                 $group: {
                     _id: null,
-                    AP: { $sum: '$votos.ALIANZA_POPULAR' },
-                    ADN: { $sum: '$votos.ADN' },
-                    SUMATE: { $sum: '$votos.SUMATE' },
+
                     LIBRE: { $sum: '$votos.LIBRE' },
-                    FP: { $sum: '$votos.FP' },
-                    MAS_IPSP: { $sum: '$votos.MAS_IPSP' },
-                    MORENA: { $sum: '$votos.MORENA' },
-                    UNIDAD: { $sum: '$votos.UNIDAD' },
                     PDC: { $sum: '$votos.PDC' },
                     votosBlancos: { $sum: '$votosBlancos' },
                     votosNulos: { $sum: '$votosNulos' },
